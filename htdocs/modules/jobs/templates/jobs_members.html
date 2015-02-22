@@ -1,0 +1,95 @@
+<br/>
+
+<table cellspacing="1" class="outer" style="width:99%;">
+    <tr>
+        <td style="padding:0;">
+            <table cellspacing="1" class="outer" style="width:99%;">
+                <tr>
+                    <td class="head" width="50%"><{$nav_main}></td>
+                </tr>
+                <tr>
+                    <td class="head"><{$all_company_listings}><{$company}></td>
+                </tr>
+
+                <tr>
+                    <td class="head"><{$edit_company}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$add_listing}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$del_company}></td>
+                </tr>
+
+                <{if $listing_exists}>
+                <table border="0" cellpadding="0" cellspacing="0" style="width:99%;">
+                    <td class="head" align="center"><{$company_logo}></td>
+                    </tr></table>
+
+
+                <table cellspacing="1" class="outer" style="width:99%;">
+                    <tr>
+                        <td style="padding:0;">
+
+                            <br/><br/><{$nav_page}><br/><br/>
+
+                            <table border="0" cellpadding="0" cellspacing="0" style="width:99%;">
+                                <tr>
+                                    <{if $isadmin}>
+                                    <td class="head"></td>
+                                    <{/if}>
+
+
+                                    <td class="head"><{$title_head}></td>
+                                    <{if $istheirs}>
+                                    <td class="head" align="center"></td>
+                                    <{/if}>
+                                    <td class="head" align="center"><{$price_head}></td>
+                                    <td class="head" align="center"><{$expires_head}></td>
+                                    <td class="head" align="center"><{$date_head}></td>
+                                    <td class="head"><{$local_head}></td>
+                                    <{if $istheirs}>
+                                    <td class="head"><{$replies_head}></td>
+                                    <{/if}>
+                                    <td class="head" align="center"><{$views_head}></td>
+                                </tr>
+                                <{foreach item=item from=$items}>
+                                <tr class=<{cycle values="odd,even"
+                                }>>
+                                <{if $isadmin}>
+                                <td><{$item.adminlink}></td>
+                                <{/if}>
+
+
+                                <td><a href="<{$xoops_url}>/modules/<{$mydirname}>/viewjobs.php?lid=<{$item.id}>"><b><{$item.title}>
+                                    <{$item.new}></b></a></td>
+                                <{if $istheirs}>
+                                <td align="center"><{if $item.istheirs}><{$item.modify_link}><{/if}></td>
+                                <{/if}>
+                                <td align="center"><{$item.price}>&nbsp;<{$item.typeprice}></td>
+                                <td align="center"><{$item.expires}></td>
+                                <td align="center"><{$item.date}></td>
+                                <td><{$item.town}></td>
+                                <{if $istheirs}>
+                                <td align="center"><{if $item.istheirs}><b><{$item.rrows}></b>&nbsp;<{$item.view_now}><{/if}>
+                                </td>
+                                <{/if}>
+                                <td align="center"><{$item.hits}></td>
+                                </tr>
+                                <{/foreach}>
+
+                            </table>
+                            <br/><br/><{$nav_page}><br/><br/>
+                        </td>
+                    </tr>
+                </table>
+
+                <{else}>
+                <table cellspacing="1" class="outer" style="width:99%;">
+                    <tr>
+                        <td class="head" align="center"><{$logo}></td>
+                    </tr>
+                    <tr>
+                        <td><br/><br/><{$no_listing}></td>
+                    </tr>
+                </table>
+
+                <{/if}>
+                </td></tr>
+            </table>
+
+            <{include file='db:system_notification_select.html'}>

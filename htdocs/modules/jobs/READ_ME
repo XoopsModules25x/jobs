@@ -1,0 +1,40 @@
+INSTALL DIRECTIONS
+
+BACKUP YOUR DATABASE BEFORE ANY MAJOR UPGRADE. DON'T SAY YOU WEREN'T WARNED.
+
+the folders logo_images, resumes and photo need to be chmod 777,
+the module will check those folders and if not right you will be notified in the admin area.
+
+1) NEW INSTALL
+
+  1.   Upload the jobs folder inside the Xoops modules folder, go to modules administration and install.
+
+
+2) UPGRADING FROM ANY PREVIOUS VERSION
+
+  BACKUP YOUR DATABASE BEFORE THIS UPGRADE. DON'T SAY YOU WEREN'T WARNED.
+
+  1. Overwrite the jobs folder with the new files.
+  2. Replace the class/xoopsform/formselect.php file with the one provided for your Xoops version.
+  3. Run the upgrade script as admin. point browser to "http://yoursite/modules/jobs/admin/upgrade.php"
+  4. Update module, in module admin and you are done 
+
+Things you MUST do before using this module
+
+Before using this module there are some things you NEED TO DO FIRST.
+
+1. You MUST go to JOBS PREFERENCES FIRST and set it up the way you want to. Once you set it to use a Company or not, and add listings, you can not change it later, or it will mess up the way the module works.
+2. Then you need to go to JOBS ADMIN and set up categories, permissions, regions, type management. 
+
+IMPORTANT!!!  You must create a category in resumes before trying to set permissions.
+IMPORTANT!!!  You must create states or regions unless you don't use states in the preferences.
+
+
+
+Donations will allow this software to continue, without them probably not.
+
+Report any problems at www.jlmzone.com
+
+Thanks and enjoy.
+
+John

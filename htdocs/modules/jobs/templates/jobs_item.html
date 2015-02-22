@@ -1,0 +1,70 @@
+<{if $ad_exists}>
+<table cellspacing="1" class="outer" style="width:100%;">
+    <tr>
+        <th align="center"><{$add_from_title}> <{$add_from_sitename}></th>
+    </tr>
+    <tr>
+        <td class="odd" align="left"><{$nav_main}> <{$nav_sub}> (<{$nav_subcount}>)</td>
+    </tr>
+    <{if $photo}>
+    <tr>
+        <td class="odd"><br/>
+
+            <div align="center"><{$photo}></div>
+            <br/></td>
+    </tr>
+    <{/if}>
+    <tr>
+        <td class="head"><{$submitter}><{if $show_company}>&nbsp;<{$job_for}>&nbsp;<{$company}><{/if}> &nbsp;&nbsp;&nbsp;
+            (<{$read}>)&nbsp;&nbsp;<{$modify}>&nbsp;&nbsp;<{$all_jobs}>
+        </td>
+    </tr>
+    <tr>
+        <td class="even"><{$admin}> <b><{$title}>: </b>&nbsp;&nbsp;<{$type}></td>
+    </tr>
+    <tr>
+        <td class="odd"><b><{$desctext_head}></b><br/><br/><{$desctext}></td>
+    </tr>
+    <tr>
+        <td class="odd"><b><{$requirements_head}></b><br/><br/><{$requirements}><br/><br/></td>
+    </tr>
+    <{if $price_price}>
+    <tr>
+        <td class="odd"><b><{$price_head}></b><{$price_price}>&nbsp;&nbsp;<{$price_typeprice}></td>
+    </tr>
+    <tr>
+        <{/if}>
+        <td class="odd"><b><{$contactinfo_head}></b><br/><br/><{$contactinfo}><br/><br/><{if $contactinfo1}><{$or}><br/><br/><{$contactinfo1}><{/if}><{if
+            $contactinfo2}><br/><br/><{$or}><br/><br/><{$contactinfo2}><{/if}>
+        </td>
+    </tr>
+    <tr>
+        <td class="odd"><b><{$local_head}></b> <{$local_town}></td>
+    </tr>
+    <{if $show_state && $state !=""}>
+    <tr>
+        <td class="odd"><b><{$state_head}></b> <{$state}></td>
+    </tr>
+    <{/if}>
+    <{if $xoops_isuser}>
+    <tr>
+        <td class="odd"><b><{$contact_head}></b> <{$contact_email}> &nbsp;&nbsp;
+            <b><{$contact_tel_head}></b> <{$contact_tel}>
+    </tr>
+
+    <{else}>
+    <tr>
+        <td class="odd"><{$job_mustlogin}></td>
+    </tr>
+    <{/if}>
+    <tr>
+        <td class="foot" align="right"><{$date}> <{if $xoops_isuser}><{$friend}><{/if}></td>
+    </tr>
+</table>
+<{else}>
+<div align="center"><b><{$no_ad}></b></div>
+<{/if}>
+<br/><br/>
+<div align="center"><b>[ <{$link_main}> ]</b></div>
+<br/><br/>
+

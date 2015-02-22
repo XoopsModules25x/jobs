@@ -1,0 +1,8 @@
+Credits
+===============
+
+Originally developed by John Mordo (jlm69)
+
+Version 2.3 was updated to XOOPS 2.5.0 Standard GUI by Michael Beck (Mamba)
+
+Version4.4 beta1 and 4.4 beta2 were done by mamba, all other versions are developed by John Mordo

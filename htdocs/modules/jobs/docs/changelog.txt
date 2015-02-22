@@ -1,0 +1,60 @@
+
+---------------------------------------
+4.4 RC1  2013-06-19
+---------------------------------------
+
+- fixed all reported errors from BETA2  (jlm69)
+
+---------------------------------------
+4.4 Beta 2  2012-10-10
+---------------------------------------
+
+- added folder check and stats (Mamba)
+
+---------------------------------------
+4.4 Beta 1  2012-10-07
+---------------------------------------
+
+- Converted to XOOPS 2.5.5 Admin GUI (Mamba)
+
+---------------------------------------
+4.3 RC2  2010-05-23
+---------------------------------------
+
+1. Now works with Xoops version 2.3.3b (some files need to be changed)
+2. I fixed a lot of errors from RC1
+
+Added search by state or region and category.
+
+---------------------------------------
+3.0 RC3  2010-04-19
+---------------------------------------
+
+
+Things new for Version 3.0
+
+
+1. Fixed the report about possible SQL injection, put addslashes() in the URL's,
+and mysql_real_escape_string() in the database calls.
+
+2. Admin can choose to use companies or not. Some just want to use it for one company.
+
+3. Companies works like this.
+
+When you go to add a job listing for the first time you will be redirected to a page to add your Company Information.
+They will only need to add this information once, after that everytime they go to add a job Listing that information will already be filled out, so they won't have to keep add it.
+
+The person who adds the Company Info can also choose two other users (by username) that can add Job Listings for that company, and also their contact Information can be added when adding or Editing the Company Information.
+
+
+4. Users can view all listings for a company, and if that user is the submitter, they can administer their
+listings from there. they will also be shown how many replies they have had for each listing and have
+a link to show them the replies.
+
+5. Users can sort the Job Listings by job title, date, company, popularity.
+Users can sort the Resume Listings by job title, date, experience, popularity.
+
+
+6. Users can now create their resume if they don't have one to upload.
+For now it is just a one field form using a wywiwyg editor.
+In the future it will get more involved, hopefully.
