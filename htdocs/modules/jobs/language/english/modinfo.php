@@ -84,7 +84,6 @@ define('_MI_JOBS_OP', 'Read my opinion');
 define('_MI_JOBS_PREMIUM', 'Jobs Premium');
 define('_MI_JOBS_PREMIUM_DESC', 'Who can select days listing will last');
 
-
 // Notification event descriptions and mail templates
 
 
@@ -186,7 +185,6 @@ define("_MI_JOBS_SHOW_COMPANY", "Show Company");
 define("_MI_JOBS_SHOW_STATE", "Use the State field");
 define("_MI_JOBS_MULTIPLE_SUBMITTERS", "Allow multiple submitters per Company");
 
-
 define("_MI_JOBS_NOT_PREMIUM", "Number of Pictures - Not Premium");
 define("_MI_JOBS_NOT_PREMIUM_DESC", "Number of pictures a non-Premium user can have in his page");
 
@@ -224,7 +222,7 @@ define("_MI_JOBS_ADMIN_MAIL", "Send copies of contact form to admin");
 define("_MI_JOBS_ADMIN_MAIL_DESC", "Sends copy of the contact form to the admin with senders IP (to monitor spam)");
 
 define("_MI_JOBS_USE_CAPTCHA", "Use Captcha");
-//Added for 4.0 
+//Added for 4.0
 
 define("_MI_JOBS_INDEX_CODE", "Extra Index Page Code");
 define("_MI_JOBS_INDEX_CODE_DESC", "Put your adsense or other code here");
@@ -243,7 +241,6 @@ define("_MI_JOBS_BNAME3_DESC", "Job Block for Premium Listing");
 define("_MI_JOBS_OFFER_SEARCH", "Offer search within listings");
 define("_MI_JOBS_OFFER_SEARCH_DESC", "Select yes to provide a search box");
 
-
 // 4.2
 define("_MI_JOBS_RESUME_SEARCH", "Offer search within Resumes");
 define("_MI_JOBS_RESUME_SEARCH_DESC", "Select yes to provide a search box");
@@ -251,7 +248,6 @@ define("_MI_JOBS_RESUME_CODE", "Use Above code in the Resume Listings");
 define("_MI_JOBS_RESUME_CODE_DESC", "Put additional code between listings<br />on the resume index page<br />and the resume categories page.<br /><br />Banners, Adsense code, etc...");
 
 define("_MI_JOBS_RSORT_ORDER", "Resume Default Sort Order");
-
 
 define("_MI_JOBS_RES_MODERAT_UP", "Moderate Updated Resume Listings");
 define("_MI_JOBS_MODERAT_UP", "Moderate Updated Job Listings");
@@ -267,9 +263,7 @@ define ('_MI_JOBS_COMPANY_NOTIFYCAP', 'Notify me of new listings posted by this 
 //define ('_MI_JOBS_COMPANY_NOTIFYDSC', 'Receive notification when a new listing is posted by this Company.');
 define ('_MI_JOBS_COMPANY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: auto-notify : New listing by Company');
 
-
 define ('_MI_JOBS_RESUMES', 'Resumes');
-
 
 // 4.3 RC2
 
@@ -284,6 +278,3 @@ define("_MI_JOBS_ADMENU9", "Resumes");
 // 4.4RC2
 define("_MI_JOBS_NBJOBLISTING", "Number of job listings per page in the admin");
 define("_MI_JOBS_NBRESLISTING","Number of resume listings per page in the admin");
-
-
-

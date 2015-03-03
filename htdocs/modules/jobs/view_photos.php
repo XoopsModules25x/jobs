@@ -180,7 +180,6 @@ if ($xoopsModuleConfig["" . $mydirname . "_lightbox"] == 1) {
  * Assigning smarty variables
  */
 
-
 $sql    = "SELECT name FROM " . $xoopsDB->prefix("jobs_resume") . " where lid=" . addslashes($lid) . "";
 $result = $xoopsDB->query($sql);
 while (list($name) = $xoopsDB->fetchRow($result)) {

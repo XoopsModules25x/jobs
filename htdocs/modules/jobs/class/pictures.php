@@ -418,7 +418,6 @@ class Xoopsjlm_picturesHandler extends XoopsObjectHandler
         $field_lid     = new XoopsFormHidden("lid", $lid);
         $field_marker  = new XoopsFormHidden("marker", 1);
 
-
         /**
          * Check if using Xoops or XoopsCube (by jlm69)
          * Right now Xoops does not have a directory called preload, Xoops Cube does.

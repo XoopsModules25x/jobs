@@ -46,8 +46,6 @@ $default_sort = $xoopsModuleConfig['jobs_listing_sortorder'];
 
 $default_orderby =  "dateD";
 
-
-
 $cid     = intval($_GET['cid']);
 $min     = !isset($_REQUEST['min']) ? NULL : $_REQUEST['min'];
 $show    = !isset($_REQUEST['show']) ? NULL : $_REQUEST['show'];

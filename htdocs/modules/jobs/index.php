@@ -221,11 +221,11 @@ while ($myrow = $xoopsDB->fetchArray($result)) {
                     
                 if ($newsubcat == true) {
 
-	$subcategories .= "<a style=\"color:red;\" href=\"jobscat.php?cid=".$ele['cid']."\">".$chtitle."</a>";
+    $subcategories .= "<a style=\"color:red;\" href=\"jobscat.php?cid=".$ele['cid']."\">".$chtitle."</a>";
 
 }else {
-	$subcategories .= "<a href=\"jobscat.php?cid=".$ele['cid']."\">".$chtitle."</a>";
-	}    
+    $subcategories .= "<a href=\"jobscat.php?cid=".$ele['cid']."\">".$chtitle."</a>";
+    }
                     
                     
   //                  $subcategories
@@ -250,7 +250,6 @@ $xoopsTpl->assign('cat_count', $count - 1);
 
 $usesubcats = $xoopsModuleConfig["" . $mydirname . "_display_subcat"];
 $xoopsTpl->assign('usesubcats', $usesubcats);
-
 
 list($ann) = $xoopsDB->fetchRow(
     $xoopsDB->query(

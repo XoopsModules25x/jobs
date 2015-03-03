@@ -747,7 +747,7 @@ global $xoopsModule, $xoopsConfig;
     $photohighdir = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->getVar('dirname') . "/photo/midsize";
     $cachedir = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->getVar('dirname') . "/resumes";
     $tmpdir = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->getVar('dirname') . "/rphoto";
-	$logo_images_dir = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->getVar('dirname') . "/logo_images";
+    $logo_images_dir = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->getVar('dirname') . "/logo_images";
 
     if (file_exists($photodir)) {
         if (!is_writable($photodir)) {
@@ -798,15 +798,15 @@ global $xoopsModule, $xoopsConfig;
     } else {
         echo "<span style=\" color: red; font-weight: bold;\">Warning:</span> " . $tmpdir . " does NOT exist!<br />";
     }
-	if(file_exists($logo_images_dir)) {
-		if (!is_writable($logo_images_dir)) {
-			echo "<span style=\" color: red; font-weight: bold;\">Warning:</span> I am unable to write to: " . $logo_images_dir . "<br />";
-		} else {
-			echo "<span style=\" color: green; font-weight: bold;\">OK:</span> " . $logo_images_dir . "<br />";
-		}
-	} else {
-		echo "<span style=\" color: red; font-weight: bold;\">Warning:</span> " . $logo_images_dir . " does NOT exist!<br />";
-	}
+    if(file_exists($logo_images_dir)) {
+        if (!is_writable($logo_images_dir)) {
+            echo "<span style=\" color: red; font-weight: bold;\">Warning:</span> I am unable to write to: " . $logo_images_dir . "<br />";
+        } else {
+            echo "<span style=\" color: green; font-weight: bold;\">OK:</span> " . $logo_images_dir . "<br />";
+        }
+    } else {
+        echo "<span style=\" color: red; font-weight: bold;\">Warning:</span> " . $logo_images_dir . " does NOT exist!<br />";
+    }
 */
 
     /**
