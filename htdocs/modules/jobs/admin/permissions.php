@@ -17,7 +17,7 @@ echo $indexAdmin->addNavigation('permissions.php');
 
 //wfdownloads_adminMenu(9, _AM_WFD_PERM_MANAGEMENT);
 
-	echo "
+    echo "
 		<fieldset><legend style='font-weight: bold; color: #900;'>" . _AM_WFD_PERM_CPERMISSIONS . "</legend>\n
 		<div style='padding: 2px;'>\n";
 
@@ -29,7 +29,7 @@ if (count($categories) > 0)
 {
     foreach (array_keys($categories) as $i)
     {
-    	$cat_form->addItem($categories[$i]->getVar('cid'), $categories[$i]->getVar('title'), $categories[$i]->getVar('pid'));
+        $cat_form->addItem($categories[$i]->getVar('cid'), $categories[$i]->getVar('title'), $categories[$i]->getVar('pid'));
     }
     echo $cat_form->render();
 }

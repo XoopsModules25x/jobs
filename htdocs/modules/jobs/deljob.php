@@ -83,7 +83,7 @@ if ($xoopsUser) {
         }
         echo "[ <a href=\"deljob.php?lid=" . addslashes($lid) . "&amp;ok=1\">" . _JOBS_OUI
             . "</a> | <a href=\"viewjobs.php?lid=" . addslashes($lid) . "\">" . _JOBS_NON . "</a> ]<br /><br />";
-        echo "</td></tr></table>";    
+        echo "</td></tr></table>";
     }
     
     

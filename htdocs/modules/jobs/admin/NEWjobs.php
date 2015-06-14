@@ -134,5 +134,3 @@ if ($crows > "0") {
 include_once 'job_categories.php';
 
 xoops_cp_footer();
-
-?>

@@ -47,7 +47,7 @@ if ($crows > "0") {
            if ($crows > 0) {
             $nav = new XoopsPageNav($crows, $showonpage, $start, 'start', '');
             echo "<br />" . _AM_JOBS_THEREIS . " <b>$crows</b> " . _AM_JOBS_RES_LISTINGS . "<br /><br />";
-            echo $nav->renderNav();    
+            echo $nav->renderNav();
                 echo "<br /><br /><table width=100% cellpadding=2 cellspacing=0 border=0>";
             $rank = 1;
         }

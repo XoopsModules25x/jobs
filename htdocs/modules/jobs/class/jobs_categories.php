@@ -78,8 +78,8 @@ class jobs_categories extends XoopsObject
         $imgtray_category_img->addElement(new XoopsFormLabel('', "<br /><img src='" . XOOPS_URL . "/" . $uploadirectory_category_img . "/" . $img . "' name='image_category_img' id='image_category_img' alt='' />"));
 
         $fileseltray_category_img = new XoopsFormElementTray('', '<br />');
-			$fileseltray_category_img->addElement(new XoopsFormFile(_AM_JOBS_FORMUPLOAD , "img", $xoopsModuleConfig["jobs_maxfilesize"]),false);
-			$fileseltray_category_img->addElement(new XoopsFormLabel(''), FALSE);
+            $fileseltray_category_img->addElement(new XoopsFormFile(_AM_JOBS_FORMUPLOAD , "img", $xoopsModuleConfig["jobs_maxfilesize"]),false);
+            $fileseltray_category_img->addElement(new XoopsFormLabel(''), FALSE);
         $imgtray_category_img->addElement($fileseltray_category_img);
         $form->addElement($imgtray_category_img);
 

@@ -182,6 +182,7 @@ class XoopsGroupPermForm extends XoopsForm
         }
         $ret .= '</table>' . $hidden . '</form>';
         $ret .= $this->renderValidationJS(TRUE);
+
         return $ret;
     }
 }
@@ -287,6 +288,7 @@ class XoopsGroupFormCheckBox extends XoopsFormElement
             . "\" type=\"checkbox\" value=\"\" onclick=\"var optionids = new Array(" . $option_ids_str
             . "); xoopsCheckAllElements(optionids, '" . $checkallbtn_id . "');\" />";
         $ret .= '</td></tr></table>';
+
         return $ret;
     }
 
@@ -337,5 +339,3 @@ class XoopsGroupFormCheckBox extends XoopsFormElement
         }
     }
 }
-
-?>

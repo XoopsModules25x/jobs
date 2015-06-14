@@ -276,7 +276,6 @@ define("_JOBS_EXP", "Experience");
 define("_JOBS_EXPLTOH", "Experience lowest to highest");
 define("_JOBS_EXPHTOL", "Experience highest to lowest");
 
-
 //ADDED FOR 3.0 RC1
 
 define("_JOBS_VIEW_MY_JOBS", "View all Job listings for ");
@@ -406,7 +405,6 @@ define("_JOBS_RES_INTERESS", "Other Resume Listings can be seen at the Job Listi
 define("_JOBS_RES_SUBJET", "An interesting Resume Listing from ");
 define("_JOBS_RESSEND", "The Job Listing selected has been sent");
 
-
 define("_JOBS_SPONSORED_LISTINGS", "Sponsored");
 define("_JOBS_ALL_LISTINGS", "Listings");
 define("_JOBS_ALL", "All");
@@ -425,15 +423,12 @@ define("_JOBS_LOCALZTOA", "Location (Z to A)");
 define("_JOBS_STATEATOZ", "State (A to Z)");
 define("_JOBS_STATEZTOA", "State (Z to A)");
 
-
 define("_JOBS_CONTACTINFO1", "Contact Information 2 :");
 define("_JOBS_CONTACTINFO2", "Contact Information 3 :");
 define("_JOBS_SURDELREPLY", "ATTENTION : Are you sure you want to delete this Reply");
 
-
 //4.2
 define("_JOBS_COMP_MOD", "Your Company Information has been modified");
-
 
 define("_JOBS_RES_UP_PLUS", "Your Resume Listing has been updated and<br />You will be directed to create your Resume");
 define("_JOBS_NEWCREATEDRES", "Create a new resume :");
@@ -463,7 +458,6 @@ define("_JOBS_WHAT_COMPANY", "Select a Company");
 define("_JOBS_MOD_COMPANY", "Modify Company");
 define("_JOBS_NOT_APPROVED", "This Listing Is Not Yet Approved");
 
-
 // Added for 4.3
 define("_JOBS_SEARCH_BYSTATE", "By State");
 define("_JOBS_SEARCH_KEYWORDS", "Keywords");
@@ -471,7 +465,6 @@ define("_JOBS_MOD_LISTING", "Modify your Job Listing");
 define("_JOBS_ADDED_BY_COMPANY", "A new Job Listing has been added by ");
 
 define("_JOBS_SELECTCOMP", "Select Company");
-
 
 define("_JOBS_SEARCH_BYCATEGORY", "By Category");
 

@@ -6,7 +6,6 @@ if (!defined('XOOPS_ROOT_PATH')) {
 $mydirname   = basename(dirname(__FILE__));
 $cloned_lang = '_MI_' . strtoupper($mydirname);
 
-
 $modversion['name']        = _MI_JOBS_NAME;
 $modversion['version']     = '4.4';
 $modversion['description'] = _MI_JOBS_DESC;
@@ -121,7 +120,6 @@ $modversion['blocks'][4]['show_func']   = "jobs_block_premium_show";
 $modversion['blocks'][4]['edit_func']   = "jobs_block_premium_edit";
 $modversion['blocks'][4]['options']     = "date|10|25|0";
 $modversion['blocks'][4]['template']    = "jobs_block_premium.html";
-
 
 // Menu
 $modversion['hasMain'] = 1;
@@ -449,7 +447,7 @@ $modversion['config'][34]['formtype']    = 'textbox';
 $modversion['config'][34]['valuetype']   = 'text';
 $modversion['config'][34]['default']     = '512000';
 
-// Use WYSIWYG Editors for Jobs? 
+// Use WYSIWYG Editors for Jobs?
 $modversion['config'][35]['name']        = "" . $mydirname . "_form_options";
 $modversion['config'][35]['title']       = $cloned_lang . "_EDITOR";
 $modversion['config'][35]['description'] = $cloned_lang . "_LIST_EDITORS";
@@ -460,7 +458,7 @@ xoops_load('xoopseditorhandler');
 $editor_handler                      = XoopsEditorHandler::getInstance();
 $modversion['config'][35]['options'] = array_flip($editor_handler->getList());
 
-// Use WYSIWYG Editors for resumes? 
+// Use WYSIWYG Editors for resumes?
 $modversion['config'][36]['name']        = "" . $mydirname . "_resume_options";
 $modversion['config'][36]['title']       = $cloned_lang . "_RES_EDITOR";
 $modversion['config'][36]['description'] = $cloned_lang . "_LIST_EDITORS";
@@ -595,7 +593,6 @@ $modversion['config'][50]['valuetype']   = 'int';
 $modversion['config'][50]['default']     = '4';
 $modversion['config'][50]['options']     = array();
 
-
 //Notification
 //$modversion["notification"] = array();
 $modversion['hasNotification'] = 1;
@@ -608,7 +605,6 @@ $modversion['notification']['category'][1]['title']          = _MI_JOBS_GLOBAL_N
 $modversion['notification']['category'][1]['description']    = _MI_JOBS_GLOBAL_NOTIFYDSC;
 $modversion['notification']['category'][1]['subscribe_from'] = array('index.php', 'jobscat.php', 'members.php');
 
-
 $modversion['notification']['category'][2]['name']           = 'category';
 $modversion['notification']['category'][2]['title']          = _MI_JOBS_CATEGORY_NOTIFY;
 $modversion['notification']['category'][2]['description']    = _MI_JOBS_CATEGORY_NOTIFYDSC;
@@ -616,14 +612,12 @@ $modversion['notification']['category'][2]['subscribe_from'] = 'jobscat.php';
 $modversion['notification']['category'][2]['item_name']      = 'cid';
 $modversion['notification']['category'][2]['allow_bookmark'] = 1;
 
-
 $modversion['notification']['category'][3]['name']           = 'job_listing';
 $modversion['notification']['category'][3]['title']          = _MI_JOBS_NOTIFY;
 $modversion['notification']['category'][3]['description']    = _MI_JOBS_NOTIFYDSC;
 $modversion['notification']['category'][3]['subscribe_from'] = array('viewjobs.php');
 $modversion['notification']['category'][3]['item_name']      = 'lid';
 $modversion['notification']['category'][3]['allow_bookmark'] = 1;
-
 
 $modversion['notification']['category'][4]['name']           = 'company_listing';
 $modversion['notification']['category'][4]['title']          = _MI_JOBS_COMPANYCAT_NOTIFY;
@@ -683,7 +677,6 @@ $modversion['notification']['event'][5]['caption']       = _MI_JOBS_COMPANY_NOTI
 $modversion['notification']['event'][5]['description']   = _MI_JOBS_COMPANY_NOTIFYDSC;
 $modversion['notification']['event'][5]['mail_template'] = 'jobs_company_newpost_notify';
 $modversion['notification']['event'][5]['mail_subject']  = _MI_JOBS_COMPANY_NOTIFYSBJ;
-
 
 //new listings in all categories posted
 

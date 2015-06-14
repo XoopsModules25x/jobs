@@ -87,7 +87,6 @@ define("_AM_JOBS_HELP1", "<b>To add a category:</b> click on the image <img src=
     . "/modules/jobs/images/plus.gif\" border=0 width=10 height=10 alt=\"Add a category\"> alongside the category you want to add the category under.<p><b>To change or delete a category:</b> click on the name of the category");
 define("_AM_JOBS_HELP2", "<b>Category Order:</b> integer in brackets corresponds to the order within the superior category or of the principal category. Negative integers can be used.: -1");
 
-
 // fichier pref.php //
 define("_AM_JOBS_CONFSAVE", "Configuration saved");
 define("_AM_JOBS_JOBOCANPOST", "Anonymous user can post Job Listings:");
@@ -128,7 +127,6 @@ define("_AM_JOBS_RES_JOBVALID", "Resume Listing has been approved");
 define("_AM_JOBS_RES_MODRES", "Change a Resume Listing");
 define("_AM_JOBS_RES_ALLMODANN", "(All Resume Listings can be modified by the administrator.)");
 
-
 define("_AM_JOBS_SUBMITTED_ON", "submitted on");
 define("_AM_JOBS_EXPIRE", "Days until expiration:");
 define("_AM_JOBS_CATEGORY", "Job Categories");
@@ -146,7 +144,6 @@ define("_AM_JOBS_YOUR_USING", "You are currently using version");
 define("_AM_JOBS_OP", "Read my opinion");
 define('_AM_JOBS_SUPPORT', '<medium>Support this software</small></medium>');
 define('_AM_JOBS_DATABASE_CHANGE', 'If upgrading from a jobs version 1.xx there will be a change to your database. Make a backup of your database to be safe.');
-
 
 // Group's Permissions
 define('_AM_GPERM_G_ADD', "Can add");
@@ -174,7 +171,6 @@ define("_AM_JOBS_PREMIUM", "Premium Listing:");
 define("_AM_JOBS_STATUS1", "Status:");
 define("_AM_JOBS_STATE1", "State:");
 
-
 define("_AM_JOBS_COMP_NAME", "Company Name:");
 define("_AM_JOBS_COMP_ADDRESS", "Address:");
 define("_AM_JOBS_COMP_ADDRESS2", "Address2:");
@@ -197,18 +193,15 @@ define("_AM_JOBS_MOD_COMPANY", "Modify Company Info");
 define("_AM_JOBS_COMPVALID", "Company Info Modified Successfully ");
 define("_AM_JOBS_MAN_COMPANY", "Manage Companies");
 
-
 define("_AM_JOBS_DOCUMENTATION", "Jobs Module Documentation");
 define("_AM_JOBS_FEATURES", "Features");
 define("_AM_JOBS_COMPANY_DOCS", "Companies");
 define("_AM_JOBS_INCOMPLETE", "This Documentation is Incomplete, it will be completed over the next few versions.");
 define("_AM_JOBS_VERSION", "Jobs 4.0  -  Only for Xoops 2.3.x and up");
 
-
 define("_AM_JOBS_NOCOMPANY", "No Companies Listed");
 define("_AM_JOBS_CONTACTINFO", "Contact Information:");
 define("_AM_JOBS_CONTACTINFO1", "Contact Information 2:");
-
 
 // Added for 4.2
 define("_AM_JOBS_NEWPICT", "New logo:");
@@ -290,7 +283,6 @@ define("_AM_JOBS_COMPANY_CONTACT", "Your Contact Information.");
 define("_AM_JOBS_COMPANY_LOGO", "Upload your logo ");
 define("_AM_JOBS_CONTINUE", "Continue");
 
-
 define("_AM_JOBS_SELECTCOMPANY", "Select a Company");
 define("_AM_JOBS_SELECTCOMPADD", "Select Company to add a listing for");
 
@@ -336,7 +328,6 @@ define("_AM_JOBS_PLS_CORRECT", "*** There was a problem with your modifications 
 //  END
 define("_AM_JOBS_COMPANY_ADDED", "Your Company Information has been Added");
 
-
 // DDED for 4.3RC2
 
 define("_AM_JOBS_RES_HOW_LONG", "How long do you want Resume listing shown (in days)");
@@ -349,7 +340,6 @@ define("_AM_JOBS_MOD_LISTING", "Modify a Resume listing as Admin");
 
 define("_AM_JOBS_ADDED_TO_RES_CAT", "A new Resume Listing has been added to the category ");
 define("_AM_JOBS_RES_ADDED_PLUS", "Your Resume Listing has been added and<br />You will be directed to create your Resume");
-
 
 define("_AM_JOBS_RES_PCODE", "<b>Privacy Code</b>");
 define("_AM_JOBS_RES_PSIZE", "This resume will be public if left blank.");
@@ -394,39 +384,38 @@ define("_AM_JOBS_FORMIMAGE_PATH","Select Image");
 /**
 * index.php
 */
-define("_AM_JOBS_SUMMARY",			"General stats");
-define("_AM_JOBS_COMPANY_TOTCAP",	"Companies Listed:");
-define("_AM_JOBS_COMPANY_TOT",		"%s Total <a href=\"company.php\">companies</a>");
-define("_AM_JOBS_COMPANIES_TOTAL",	 "%s Total Companies");
+define("_AM_JOBS_SUMMARY",            "General stats");
+define("_AM_JOBS_COMPANY_TOTCAP",    "Companies Listed:");
+define("_AM_JOBS_COMPANY_TOT",        "%s Total <a href=\"company.php\">companies</a>");
+define("_AM_JOBS_COMPANIES_TOTAL",     "%s Total Companies");
 
-define("_AM_JOBS_WAITVALCAP",		"Validation:");
-define("_AM_JOBS_WAITVA_JOB",		"%s Jobs are waiting to be <a href=\"jobs.php\">published</a>.");
-define("_AM_JOBS_WAITVA_RESUME",	"%s Resumes are waiting to be <a href=\"resumes.php\">published</a>.");
-define("_AM_JOBS_REVIEWTOTCAP",	"Jobs:");
-define("_AM_JOBS_PUBLISHED",		"%s Jobs <a href=\"jobs.php\">published</a>.");
-define("_AM_JOBS_CATETOTCAP",		"Job Categories:");
-define("_AM_JOBS_CATETOT",			"%s Job <a href=\"jobs.php\">categories</a>.");
-define("_AM_JOBS_CATTBLCAP",		"Categories");
-define("_AM_JOBS_RESUMES", 		"Resumes:");
-define("_AM_JOBS_PUBLISHEDCAP",	"Published:");
-define("_AM_JOBS_RESUME_PUBLISHED", 		"%s Resumes <a href=\"resumes.php\">published</a>.");
-define("_AM_JOBS_HIDDENCAP",		"Hidden:");
+define("_AM_JOBS_WAITVALCAP",        "Validation:");
+define("_AM_JOBS_WAITVA_JOB",        "%s Jobs are waiting to be <a href=\"jobs.php\">published</a>.");
+define("_AM_JOBS_WAITVA_RESUME",    "%s Resumes are waiting to be <a href=\"resumes.php\">published</a>.");
+define("_AM_JOBS_REVIEWTOTCAP",    "Jobs:");
+define("_AM_JOBS_PUBLISHED",        "%s Jobs <a href=\"jobs.php\">published</a>.");
+define("_AM_JOBS_CATETOTCAP",        "Job Categories:");
+define("_AM_JOBS_CATETOT",            "%s Job <a href=\"jobs.php\">categories</a>.");
+define("_AM_JOBS_CATTBLCAP",        "Categories");
+define("_AM_JOBS_RESUMES",        "Resumes:");
+define("_AM_JOBS_PUBLISHEDCAP",    "Published:");
+define("_AM_JOBS_RESUME_PUBLISHED",        "%s Resumes <a href=\"resumes.php\">published</a>.");
+define("_AM_JOBS_HIDDENCAP",        "Hidden:");
 define("_AM_JOBS_RESUME_CAT_TOTAL", "%s Resume <a href=\"resumes.php\">categories</a>.");
-
 
 /**
 * Misc. (used on more than one page)
 */
-define("_AM_JOBS_FILECHECKS",		"Information");
-define("_AM_JOBS_UPLOADMAX",		"Maximum upload size: ");
-define("_AM_JOBS_POSTMAX",			"Maximum post size: ");
-define("_AM_JOBS_UPLOADS",			"Uploads allowed: ");
-define("_AM_JOBS_UPLOAD_ON",		"On");
-define("_AM_JOBS_UPLOAD_OFF",		"Off");
-define("_AM_JOBS_GDIMGSPPRT",		"GD image lib supported: ");
-define("_AM_JOBS_GDIMGON",			"Yes");
-define("_AM_JOBS_GDIMGOFF",		"No");
-define("_AM_JOBS_GDIMGVRSN",		"GD image lib version: ");
+define("_AM_JOBS_FILECHECKS",        "Information");
+define("_AM_JOBS_UPLOADMAX",        "Maximum upload size: ");
+define("_AM_JOBS_POSTMAX",            "Maximum post size: ");
+define("_AM_JOBS_UPLOADS",            "Uploads allowed: ");
+define("_AM_JOBS_UPLOAD_ON",        "On");
+define("_AM_JOBS_UPLOAD_OFF",        "Off");
+define("_AM_JOBS_GDIMGSPPRT",        "GD image lib supported: ");
+define("_AM_JOBS_GDIMGON",            "Yes");
+define("_AM_JOBS_GDIMGOFF",        "No");
+define("_AM_JOBS_GDIMGVRSN",        "GD image lib version: ");
 define("_AM_JOBS_UPDATE_SUCCESS", "Updated Successfully");
 
 //directories
@@ -441,8 +430,6 @@ define('_AM_JOBS_DIRNOTCREATED','The directory can not be created');
 define('_AM_JOBS_PERMSET','The permission has been set');
 define('_AM_JOBS_PERMNOTSET','The permission can not be set');
 
-
-
 define("_AM_JOBS_MUSTADD_COMPANY", "You must add a Company first.");
 
 //ADDED FOR 4.4RC2
@@ -451,4 +438,3 @@ define("_AM_JOBS_JOBLISTINGS", "Job Listings");
 
 define("_AM_JOBS_RES_LISTINGS", "Resume Listings");
 define("_AM_JOBS_MOD_ADMIN_FOOTER", "This Module is maintained by John Mordo (jlm69)");
-

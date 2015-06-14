@@ -107,9 +107,9 @@ if (!empty($_POST['submit'])) {
         }
         if ($extra_users) {
         $extra_user2 = $extra_users["comp_user2"];
-	} else {
+    } else {
         $extra_user2 = "";
-	}
+    }
         if ($extra_user1) {
             $result3 = $xoopsDB->query("select email from " . $xoopsDB->prefix("users") . " where uid=$extra_user1");
             list($extra_user1_email) = $xoopsDB->fetchRow($result3);

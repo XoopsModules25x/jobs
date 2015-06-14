@@ -28,7 +28,6 @@ function jobs_b2_show($options)
 // at the top add    <{$block.scroll}>
     $block['scroll'] = "<marquee scrollamount=\"2\" behavior=\"scroll\" direction=\"up\" onMouseOver=\"marqid.stop()\" onMouseOut=\"marqid.start()\">";
 
-
     $cat_perms  = "";
     $categories = jobs_MygetItemIds('jobs_view');
     if (is_array($categories) && count($categories) > 0) {

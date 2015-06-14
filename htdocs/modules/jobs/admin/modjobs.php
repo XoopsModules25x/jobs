@@ -266,7 +266,6 @@ $myquery =   $xoopsDB->query(
     $form->addElement(new XoopsFormHidden("state", ""), FALSE);
     }
 
-
             $form->addElement(new XoopsFormTextArea(_AM_JOBS_CONTACTINFO, "contactinfo", $contactinfo, 4,28), FALSE);
             $form->addElement(new XoopsFormTextArea(_AM_JOBS_CONTACTINFO1, "contactinfo1", $contactinfo1,4,28), FALSE);
             $form->addElement(new XoopsFormTextArea(_AM_JOBS_CONTACTINFO2, "contactinfo2", $contactinfo2, 4,28), FALSE);

@@ -326,11 +326,11 @@ if (!empty($_POST['submit'])) {
             $state_form->addOption($rid, $name);
         }
         $form->addElement($state_form, TRUE);
-	} else {
+    } else {
         $form->addElement(new XoopsFormHidden("state", ""));
         }
-	
-	
+    
+    
 
         $form->addElement(new XoopsFormText(_AM_JOBS_TEL, "tel", 30, 30, ''), FALSE);
         ob_start();

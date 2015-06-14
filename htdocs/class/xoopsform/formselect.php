@@ -74,11 +74,11 @@ class XoopsFormSelect extends XoopsFormElement
     /**
      * Constructor
      *
-     * @param string $caption Caption
-     * @param string $name "name" attribute
-     * @param mixed $value Pre-selected value (or array of them).
-     * @param int $size Number or rows. "1" makes a drop-down-list
-     * @param bool $multiple Allow multiple selections?
+     * @param string $caption  Caption
+     * @param string $name     "name" attribute
+     * @param mixed  $value    Pre-selected value (or array of them).
+     * @param int    $size     Number or rows. "1" makes a drop-down-list
+     * @param bool   $multiple Allow multiple selections?
      */
     function XoopsFormSelect($caption, $name, $value = null, $size = 1, $multiple = false)
     {
@@ -114,7 +114,7 @@ class XoopsFormSelect extends XoopsFormElement
     /**
      * Get an array of pre-selected values
      *
-     * @param bool $encode To sanitizer the text?
+     * @param  bool  $encode To sanitizer the text?
      * @return array
      */
     function getValue($encode = false)
@@ -126,6 +126,7 @@ class XoopsFormSelect extends XoopsFormElement
         foreach($this->_value as $val) {
             $value[] = $val ? htmlspecialchars($val, ENT_QUOTES) : $val;
         }
+
         return $value;
     }
 
@@ -149,7 +150,7 @@ class XoopsFormSelect extends XoopsFormElement
      * Add an option
      *
      * @param string $value "value" attribute
-     * @param string $name "name" attribute
+     * @param string $name  "name" attribute
      */
     function addOption($value, $name = '')
     {
@@ -179,7 +180,7 @@ class XoopsFormSelect extends XoopsFormElement
      *
      * Note: both name and value should be sanitized. However for backward compatibility, only value is sanitized for now.
      *
-     * @param int $encode To sanitizer the text? potential values: 0 - skip; 1 - only for value; 2 - for both value and name
+     * @param  int   $encode To sanitizer the text? potential values: 0 - skip; 1 - only for value; 2 - for both value and name
      * @return array Associative array of value->name pairs
      */
     function getOptions($encode = false)
@@ -191,6 +192,7 @@ class XoopsFormSelect extends XoopsFormElement
         foreach($this->_options as $val => $name) {
             $value[$encode ? htmlspecialchars($val, ENT_QUOTES) : $val] = ($encode > 1) ? htmlspecialchars($name, ENT_QUOTES) : $name;
         }
+
         return $value;
     }
 
@@ -202,7 +204,7 @@ class XoopsFormSelect extends XoopsFormElement
     function render()
     {
         $ele_name = $this->getName();
-		$ele_title = $this->getTitle();
+        $ele_title = $this->getTitle();
         $ele_value = $this->getValue();
         $ele_options = $this->getOptions();
         $ret = '<select size="' . $this->getSize() . '"' . $this->getExtra();
@@ -219,6 +221,7 @@ class XoopsFormSelect extends XoopsFormElement
             $ret .= '>' . $name . '</option>' ;
         }
         $ret .= '</select>';
+
         return $ret;
     }
 
@@ -238,10 +241,10 @@ class XoopsFormSelect extends XoopsFormElement
             $eltcaption = $this->getCaption();
             $eltmsg = empty($eltcaption) ? sprintf(_FORM_ENTER, $eltname) : sprintf(_FORM_ENTER, $eltcaption);
             $eltmsg = str_replace('"', '\"', stripslashes($eltmsg));
+
             return "\nvar hasSelected = false; var selectBox = myform.{$eltname};" . "for (i = 0; i < selectBox.options.length; i++ ) { if (selectBox.value != \"\") { hasSelected = true; break; } }" . "if (!hasSelected) { window.alert(\"{$eltmsg}\"); selectBox.focus(); return false; }";
         }
+
         return '';
     }
 }
-
-?>
