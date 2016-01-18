@@ -28,7 +28,7 @@ class jobs_res_categories extends XoopsObject
     //Constructor
     function __construct()
     {
-        $this->XoopsObject();
+        parent::__construct();
         $this->initVar("cid", XOBJ_DTYPE_INT, null, false, 11);
         $this->initVar("pid", XOBJ_DTYPE_INT, null, false, 5);
         $this->initVar("title", XOBJ_DTYPE_TXTBOX, null, false, 255);
